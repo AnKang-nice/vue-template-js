@@ -1,11 +1,15 @@
 {
-	"name": "my-vue-app",
+	"name": "entryManage",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite",
-		"build": "vite build",
+		"dev:dev": "vite --mode development",
+		"dev:test": "vite --mode test",
+		"dev:prod": "vite --mode production",
+		"build:prod": "vite build --mode production",
+		"build:dev": "vite build --mode development",
+		"build:test": "vite build --mode test",
 		"preview": "vite preview",
 		"prepare": "husky"
 	},

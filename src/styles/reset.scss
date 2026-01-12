@@ -1,0 +1,179 @@
+// 统一浏览器默认标准盒子模型
+// 全局使用字体包
+html {
+	box-sizing: border-box;
+}
+
+// 清除标签默认间距
+html,
+body,
+div,
+span,
+applet,
+object,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* 旧版本浏览器对H5新标签兼容处理 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+// 清除标签默认样式
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: '';
+	content: none;
+}
+
+// 表格重置
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	vertical-align: middle;
+}
+
+/* 全局自定义标签样式 */
+a {
+	text-decoration: none;
+	outline: none;
+	backface-visibility: hidden;
+}
+
+a:focus {
+	outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: -webkit-focus-ring-color auto 0;
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* 定义滚动条轨道 内阴影+圆角 */
+::-webkit-scrollbar-track {
+	background-color: rgb(255 255 255 / 70%);
+	border-radius: 10px;
+}
+
+/* 定义滑块 内阴影+圆角 */
+::-webkit-scrollbar-thumb {
+	background-color: rgb(0 0 0 / 30%);
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+
+	&:hover {
+		cursor: pointer;
+		background-color: rgb(0 0 0 / 53%);
+	}
+}

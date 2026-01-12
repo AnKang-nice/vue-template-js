@@ -1,0 +1,11 @@
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+**/.git
+**/.svn
+**/.hg
+**/*.png
+**/.node_modules
+
+package.json
